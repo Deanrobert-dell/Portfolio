@@ -20,9 +20,9 @@ class PortfolioApp:
         tk.Label(intro_frame, text="My Programming Portfolio", font=("Arial", 16, "bold")).pack()
         
         intro_text = (
-            "This portfolio showcases four key projects developed during this course.\n"
-            "To explore, click a project button to read its details. "
-            "Then, click 'Run Project' to launch the application."
+            "T portfolio contains four projects, 2 older, 2 newr to show progression\n"
+            "to use click on the projects. "
+            "Tclick run on specific ones to watch it apper in terminal "
         )
         tk.Label(intro_frame, text=intro_text, wraplength=500, justify="center").pack(pady=10)
 
@@ -34,6 +34,7 @@ class PortfolioApp:
         self.desc_label.pack(anchor="w")
 
         self.run_button = tk.Button(self.details_frame, text="Run Project", state="disabled")
+
         self.run_button.pack(pady=10)
 
         #select the things!
@@ -71,7 +72,7 @@ class PortfolioApp:
         for item in learned:
             tk.Label(self.details_frame, text=f"• {item}").pack(anchor="w", padx=20)
         
-        tk.Label(self.details_frame, text=f"\nChallenge overcome:\n• {challenge}", wraplength=500, justify="left").pack(anchor="w")
+        tk.Label(self.details_frame, text=f"\nchallenge :\n• {challenge}", wraplength=500, justify="left").pack(anchor="w")
 
         # setup run part
 
@@ -85,7 +86,7 @@ class PortfolioApp:
             "fractal generator",
             "gens a complex tringle chape recersevly",
             ["recursive stuffs", "turtle code"],
-            "TRIANGLE",
+            "TRIANGLEsplitting files",
             lambda: triangle.triangle1()
         )
 
@@ -118,7 +119,7 @@ class PortfolioApp:
 
             lambda: main.wordcount()
         )
-        
+
 # all this below starts app and makes sure runs properly
 if __name__ == "__main__":
     root = tk.Tk()
