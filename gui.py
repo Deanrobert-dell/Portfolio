@@ -1,9 +1,10 @@
 import tkinter as tk
-from tkinter import messagebox
-from turtle1 import triangle 
-from rps import rockpaperscissors
-from geo import calculator
-from wordcount1 import main 
+
+import helpers1
+import triangle
+import rockpaperscissors
+import calculator
+import main 
 #import everything, 
 
 class PortfolioApp:
@@ -13,7 +14,7 @@ class PortfolioApp:
         self.root.title("PORTFoLIO")
         self.root.geometry("600x700")
 
-        start
+        
         intro_frame = tk.Frame(self.root, pady=10)
         intro_frame.pack(fill="x")
 

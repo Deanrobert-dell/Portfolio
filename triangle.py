@@ -2,7 +2,7 @@
 
 import turtle as trutle
 import time
-from helpers import e, s_triangle
+from helpers1 import e, s_triangle
 def triangle1():
     depth = int(input("choose depth 1-8: "))
     color = input("choose color: ")
